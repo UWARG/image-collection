@@ -8,6 +8,7 @@ import cv2
 
 
 CAMERA_NAME = 0
+
 # TODO: Move this to configuration file
 CAMERA_WIDTH = 1920
 CAMERA_HEIGHT = 1200
@@ -59,14 +60,14 @@ def main() -> int:
             )
         return -1
 
-    i = 0
+    name_counter = 0
     while True:
         result, image = camera.read()
         if not result:
             continue
 
-        cv2.imwrite(SAVE_PREFIX + str(i) + ".png", image)
-        i += 1
+        cv2.imwrite(SAVE_PREFIX + str(name_counter) + ".png", image)
+        name_counter += 1
 
         time.sleep(DELAY)
 
