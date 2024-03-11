@@ -1,6 +1,7 @@
 """
 Taking images with a USB camera on a computer on the drone.
 """
+
 import pathlib
 import time
 
@@ -46,8 +47,12 @@ def main() -> int:
     if width != CAMERA_WIDTH:
         with open(SAVE_PREFIX + "error.txt", "w", encoding="utf-8") as f:
             f.write(
-                SAVE_PREFIX + "\n"
-                + "ERROR: Camera width: " + str(width) + ", expected: " + str(CAMERA_WIDTH)
+                SAVE_PREFIX
+                + "\n"
+                + "ERROR: Camera width: "
+                + str(width)
+                + ", expected: "
+                + str(CAMERA_WIDTH)
             )
         return -1
 
@@ -55,8 +60,12 @@ def main() -> int:
     if height != CAMERA_HEIGHT:
         with open(SAVE_PREFIX + "error.txt", "w", encoding="utf-8") as f:
             f.write(
-                SAVE_PREFIX + "\n"
-                + "ERROR: Camera height: " + str(height) + ", expected: " + str(CAMERA_HEIGHT)
+                SAVE_PREFIX
+                + "\n"
+                + "ERROR: Camera height: "
+                + str(height)
+                + ", expected: "
+                + str(CAMERA_HEIGHT)
             )
         return -1
 
