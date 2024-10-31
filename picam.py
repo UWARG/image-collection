@@ -16,6 +16,9 @@ DELAY = 1.0  # seconds
 
 
 def main() -> None:
+    """
+    Main loop for capturing and saving images.
+    """
     picam2 = Picamera2()
     picam2.start(preview=False)
 
@@ -25,6 +28,7 @@ def main() -> None:
         name_counter += 1
 
         time.sleep(DELAY)
+
 
 if __name__ == "__main__":
     main()
