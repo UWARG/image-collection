@@ -14,6 +14,7 @@ if [ $? -eq 0 ]; then
     git submodule update --init --remote --recursive
     git submodule foreach --recursive "pip install -r requirements.txt"
 
+    deactivate
     echo ""
     echo "Setup complete!"
 else
