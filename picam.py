@@ -2,6 +2,8 @@
 Taking images with a Raspberry pi camera module 3 on a Rpi on the drone.
 DO NOT ACTIVATE VENV WHEN USING THIS SCRIPT, IT IS MEANT TO BE USED WITH THE DEFAULT
 RASPBERRY PI LIBRARIES THAT ARE PRE-INSTALLED. See documentation for more details.
+
+Or, when creating venv, use the --site-packages option
 """
 
 import pathlib
