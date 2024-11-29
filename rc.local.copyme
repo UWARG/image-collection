@@ -8,3 +8,7 @@ chmod +x /home/warg/image-collection/run.sh  # Update to actual path
 # FFMPEG video (backup)
 chmod +x /home/warg/image-collection/video.sh
 /home/warg/image-collection/video.sh
+
+# Picamera2 (for use with RPi 5 and Picamera)
+cd /home/warg/image-collection
+python picam.py &
