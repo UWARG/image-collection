@@ -5,7 +5,6 @@ for avilable configs.
 """
 
 import picamera2
-from libcamera import controls
 
 picam2 = picamera2.Picamera2()
 
@@ -19,7 +18,7 @@ picam2.start(show_preview=True)
 while True:
     command = input("enter a config and value (space separated): ")
     config = command.split()[0]
-    value = float(command.split()[1])
+    value = float(command.split()[1])  # pylint: disable=invalid-name
     if config == "ExposureTime":
-        value = int(value)
+        value = int(value)  # pylint: disable=invalid-name
     picam2.set_controls({command: value})
