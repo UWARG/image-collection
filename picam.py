@@ -29,4 +29,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    LOG_DIRECTORY_PATH.mkdir(parents=True, exist_ok=True)
     main()
