@@ -3,12 +3,12 @@
 
 # OpenCV Python (preferred)
 chmod +x /home/warg/image-collection/run.sh  # Update to actual path
-/home/warg/image-collection/run.sh  # Update to actual path
+/home/warg/image-collection/opencv.sh  # Update to actual path
 
 # FFMPEG video (backup)
 chmod +x /home/warg/image-collection/video.sh
 /home/warg/image-collection/video.sh
 
 # Picamera2 (for use with RPi 5 and Picamera)
-cd /home/warg/image-collection
-python picam.py &
+chmod +x /home/warg/image-collection/picam.sh
+/home/warg/image-collection/picam.sh
