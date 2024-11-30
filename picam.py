@@ -17,6 +17,8 @@ def main() -> None:
     """
     Main loop for capturing and saving images.
     """
+    LOG_DIRECTORY_PATH.mkdir(parents=True, exist_ok=True)
+
     picam2 = picamera2.Picamera2()
     picam2.start(show_preview=False)
 
@@ -29,5 +31,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    LOG_DIRECTORY_PATH.mkdir(parents=True, exist_ok=True)
     main()
